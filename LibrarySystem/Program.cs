@@ -173,7 +173,7 @@ namespace LibrarySystem
 
              
             );
-            mat.Add(
+            Dej.Add(
             new Label(0, 0, "Autor"),
             new Label(0, 1, "Počet Kníh"),
             new Label(0, 2, "Počet Strán"),
