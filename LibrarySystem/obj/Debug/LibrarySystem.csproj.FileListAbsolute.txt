@@ -9,3 +9,14 @@ C:\Users\milan\source\repos\LukasGaspierik\LibrarySystem\LibrarySystem\obj\Debug
 C:\Users\milan\source\repos\LukasGaspierik\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.csproj.CopyComplete
 C:\Users\milan\source\repos\LukasGaspierik\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.exe
 C:\Users\milan\source\repos\LukasGaspierik\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.pdb
+C:\Users\marek\Source\Repos\LukasGaspierik\LibrarySystem\LibrarySystem\bin\Debug\LibrarySystem.exe.config
+C:\Users\marek\Source\Repos\LukasGaspierik\LibrarySystem\LibrarySystem\bin\Debug\LibrarySystem.exe
+C:\Users\marek\Source\Repos\LukasGaspierik\LibrarySystem\LibrarySystem\bin\Debug\LibrarySystem.pdb
+C:\Users\marek\Source\Repos\LukasGaspierik\LibrarySystem\LibrarySystem\bin\Debug\NStack.dll
+C:\Users\marek\Source\Repos\LukasGaspierik\LibrarySystem\LibrarySystem\bin\Debug\Terminal.Gui.dll
+C:\Users\marek\Source\Repos\LukasGaspierik\LibrarySystem\LibrarySystem\bin\Debug\Terminal.Gui.xml
+C:\Users\marek\Source\Repos\LukasGaspierik\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.csprojAssemblyReference.cache
+C:\Users\marek\Source\Repos\LukasGaspierik\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.csproj.CoreCompileInputs.cache
+C:\Users\marek\Source\Repos\LukasGaspierik\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.csproj.CopyComplete
+C:\Users\marek\Source\Repos\LukasGaspierik\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.exe
+C:\Users\marek\Source\Repos\LukasGaspierik\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.pdb
