@@ -14,9 +14,12 @@ namespace LibrarySystem
             Application.Init();
 
             var top = Application.Top;
+            
 
             Console.Title = "Kniznicny System";
             Colors.Base.Normal = Application.Driver.MakeAttribute(Color.White, Color.Black);
+
+
 
             var win = new Window()
             {
@@ -58,6 +61,7 @@ namespace LibrarySystem
                 Width = Dim.Fill(),
                 Height = Dim.Fill(),
                 Visible = true,
+                
 
             };
 
@@ -120,8 +124,7 @@ namespace LibrarySystem
                 top.Redraw(new Rect(0, 0, Console.WindowWidth, Console.WindowHeight));
 
             }
-
-
+            
             int consoleCenter = Console.WindowWidth / 2;
 
             var btnMat = new Button(Console.WindowWidth / 2 - 7, 10, "Matematika");
@@ -163,7 +166,7 @@ namespace LibrarySystem
 
 
             );
-            mat.Add(
+            Dej.Add(
             new Label(0, 0, "Autor"),
             new Label(0, 1, "Počet Kníh"),
             new Label(0, 2, "Počet Strán"),
@@ -173,7 +176,7 @@ namespace LibrarySystem
 
              
             );
-            Dej.Add(
+            Ang.Add(
             new Label(0, 0, "Autor"),
             new Label(0, 1, "Počet Kníh"),
             new Label(0, 2, "Počet Strán"),
@@ -211,44 +214,51 @@ namespace LibrarySystem
             new Label(0, 3, "Obsah"),
             new Label(0, 4, "Požičané"),
             new Label(0, 5, "Dostupné")
- 
-
-            );
-            Nej.Add(
-            new Label(0, 0, "Autor"),
-            new Label(0, 1, "Počet Kníh"),
-            new Label(0, 2, "Počet Strán"),
-            new Label(0, 3, "Obsah"),
-            new Label(0, 4, "Požičané"),
-            new Label(0, 5, "Dostupné")
 
                 );
 
 
+
+
             top.Add(win);
 
-            var menuBar = new MenuBar(new MenuBarItem[]
-                {
-                    new MenuBarItem("File", new MenuItem[]
-                    {
-                        new MenuItem("New project", "", () => {}),
-                        new MenuItem("Open project", "", () => { }),
-                        new MenuItem("Save project", "", () => { }),
-                        new MenuItem("Export subtitles", "", () => { }),
-                    }),
-                    new MenuBarItem("Settings", new MenuItem[]
-                    {
+
+            Console.CursorVisible = false;
+            top.Add(win);
+            Console.CursorVisible = false;
+
+            var opendialog = new OpenDialog("Open Save", "Open up your Save");
+            var savedialog = new OpenDialog("Continue Chapter", "Open up your save!");
+            Console.CursorVisible = false;
+
+            var menuBar = new MenuBar(new MenuBarItem[] {
+                new MenuBarItem("File", new MenuItem[] {
+                    new MenuItem ("SKOLA", "", () => Application.Run (opendialog)),
+                    new MenuItem ("EPIKA", "", () => Application.Run(savedialog)),
+                    new MenuItem ("POEZIA", "", () => Application.Run (opendialog)),
+                    new MenuItem ("ROMAN", "", () => Application.Run(savedialog)),
+                    new MenuItem ("CREDITS", "", () => {
+
+                    var a = MessageBox.Query("CREDITS", "Make Lukáš and David");
+
 
                     }),
-                    new MenuBarItem("About", new MenuItem[]
-                    {
+                    new MenuBarItem("Settings",new MenuItem[] {
+
 
                     }),
-                }
+                    new MenuBarItem("About", new MenuItem[] {
+
+
+
+                    }),
+                }),
+
+            }
             );
-
             top.Add(menuBar);
             Application.Run();
+
         }
     }
 }
