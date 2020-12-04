@@ -23,6 +23,7 @@ namespace LibrarySystem
                 Title = "Library System",
                 Width = Dim.Fill(),
                 Height = Dim.Fill()
+
             };
 
 
@@ -77,7 +78,7 @@ namespace LibrarySystem
 
             int consoleCenter = Console.WindowWidth / 2;
 
-            var btnFindBook = new Button(Console.WindowWidth / 2 - 7, 10, "Najdi knihu");
+            var btnFindBook = new Button(Console.WindowWidth / 2 - 7, 10, "SKOLA");
             btnFindBook.Clicked += OnClickEvent;
 
 
