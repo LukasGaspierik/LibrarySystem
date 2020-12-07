@@ -43,7 +43,7 @@ namespace LibrarySystem
             void onSelectBook()
             {
                 string[] readText = File.ReadAllLines(opendialog.FilePath.ToString());
-                string nazov = readText[0];
+                string názov = readText[0];
                 string autor = readText[1];
                 string knihydokopy = readText[2];
                 string pozkniny = readText[3];
@@ -52,7 +52,7 @@ namespace LibrarySystem
 
                 var preview = new Window()
                 {
-                    Title = nazov,
+                    Title = názov,
                     Width = Dim.Fill(),
                     Height = Dim.Fill(),
                     Visible = true,
@@ -60,7 +60,7 @@ namespace LibrarySystem
                 };
 
                 preview.Add(
-                    new Label(0, 0, "Nazov: " + nazov),
+                    new Label(0, 0, "Nazov: " + názov),
                     new Label(0, 1, "Author: " + autor),
                     new Label(0, 2, "Knihy do kopy: " + knihydokopy),
                     new Label(0, 3, "Požičané kniny: " + pozkniny),
@@ -71,28 +71,34 @@ namespace LibrarySystem
 
                 top.Add(preview);
 
-            }
+            };
+
+            
+
+            
 
 
 
 
             int consoleCenter = Console.WindowWidth / 2;
 
-            var btnFindBook = new Button(Console.WindowWidth / 2 - 7, 10, "SKOLA");
+            var btnFindBook = new Button(Console.WindowWidth / 2 - 7, 13, "FIND BOOKS");
             btnFindBook.Clicked += OnClickEvent;
 
+            
 
             win.Add(btnFindBook);
-                win.Add(
-                    new Label(consoleCenter - 37, 0, @"  _      _ _                             _____           _                 "),
-                    new Label(consoleCenter - 37, 1, @" | |    (_) |                           / ____|         | |                "),
-                    new Label(consoleCenter - 37, 2, @" | |     _| |__  _ __ __ _ _ __ _   _  | (___  _   _ ___| |_ ___ _ __ ___  "),
-                    new Label(consoleCenter - 37, 3, @" | |    | | '_ \| '__/ _` | '__| | | |  \___ \| | | / __| __/ _ \ '_ ` _ \ "),
-                    new Label(consoleCenter - 37, 4, @" | |____| | |_) | | | (_| | |  | |_| |  ____) | |_| \__ \ ||  __/ | | | | |"),
-                    new Label(consoleCenter - 37, 5, @" |______|_|_.__/|_|  \__,_|_|   \__, | |_____/ \__, |___/\__\___|_| |_| |_|"),
-                    new Label(consoleCenter - 37, 6, @"                                 __/ |          __/ |                      "),
-                    new Label(consoleCenter - 37, 7, @"                                |___/          |___/                       ")
-                    ); 
+            win.Add(
+                new Label(consoleCenter - 37, 0, @"  _      _ _                             _____           _                 "),
+                new Label(consoleCenter - 37, 1, @" | |    (_) |                           / ____|         | |                "),
+                new Label(consoleCenter - 37, 2, @" | |     _| |__  _ __ __ _ _ __ _   _  | (___  _   _ ___| |_ ___ _ __ ___  "),
+                new Label(consoleCenter - 37, 3, @" | |    | | '_ \| '__/ _` | '__| | | |  \___ \| | | / __| __/ _ \ '_ ` _ \ "),
+                new Label(consoleCenter - 37, 4, @" | |____| | |_) | | | (_| | |  | |_| |  ____) | |_| \__ \ ||  __/ | | | | |"),
+                new Label(consoleCenter - 37, 5, @" |______|_|_.__/|_|  \__,_|_|   \__, | |_____/ \__, |___/\__\___|_| |_| |_|"),
+                new Label(consoleCenter - 37, 6, @"                                 __/ |          __/ |                      "),
+                new Label(consoleCenter - 37, 7, @"                                |___/          |___/                       ")
+
+                ) ;
                 
             top.Add(win);
 
@@ -124,8 +130,9 @@ namespace LibrarySystem
             );
             top.Add(menuBar);
             */
-
             Application.Run();
+            Application.Run();
+
 
         }
     }
