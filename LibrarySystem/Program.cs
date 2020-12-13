@@ -154,7 +154,7 @@ namespace LibrarySystem
                         text += Path.GetFileName(files[i]) + "\n";
                     }
                 }
-                MessageBox.Query("Knihy", text, "OK");
+                MessageBox.Query("KNIHY", text, "OK");
             }
 
             int consoleCenter = Console.WindowWidth / 2;
