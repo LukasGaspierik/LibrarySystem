@@ -43,7 +43,8 @@ namespace LibrarySystem
 
             void onSelectBook()
             {
-                string[] readText = File.ReadAllLines(opendialog.FilePath.ToString());
+                string[] vs = File.ReadAllLines(opendialog.FilePath.ToString());
+                string[] readText = vs;
                 string názov = readText[0];
                 string autor = readText[1];
                 string knihydokopy = readText[2];
